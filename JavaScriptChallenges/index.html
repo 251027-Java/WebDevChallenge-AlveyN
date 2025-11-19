@@ -7,17 +7,14 @@
 
 <body>
     <h2>Enter your name:</h2>
-    <input type="text" id="nameInput" placeholder="Your name here">
-    <button onclick="greetUser()">Greet Me</button>
+    <input type="text" id="numInput" placeholder="Enter a number">
+    <button onclick="squares()">Square It!</button>
 
     <script>
-        function greetUser() {
-            let name = document.getElementById("nameInput").value;
-            if (name === null || name === "") {
-                alert("Please enter your name first!");
-            } else {
-                alert("Hello, " + name + "!");
-            }
+        function squares() {
+            let num = document.getElementById("numInput").value;
+            num = num * num;
+            alert("The square is " + num);
         }
     </script>
 </body>
